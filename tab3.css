@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: pink;
+    background-color: white;
 }
 
 h1 {
@@ -13,9 +13,10 @@ h1 {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
+    background: pink;
     padding: 20px;
     box-shadow: 0 0 10px black;
+    height: 700px;
 }
 
 input[type="text"] {
