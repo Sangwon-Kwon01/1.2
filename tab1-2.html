@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic HTML5 Document">
+    <meta name="keywords" content="HTML5, Responsive">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+    <title>CMSC434 Group Project</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tab-content">
+            <div id="text" data-tab-content class="active">
+                <h1>Text</h1>
+
+                <div id="text-body"></div> 
+           </div>
+           <div id="choices" data-tab-content>
+                <h1>Choices</h1>
+
+                Add or Remove item:<br>
+
+                <input type="radio" id="add" name="AddOrRem" value="Add">
+                <label for="add">Add</label><br>
+                <input type="radio" id="remove" name="AddOrRem" value="Remove">
+                <label for="add">Remove</label>
+
+                <br><br>
+
+                <select id="groceries">
+                    <option value="Milk">Milk</option>
+                    <option value="Eggs">Eggs</option>
+                    <option value="Yogurt">Yogurt</option>
+                    <option value="Water">Water</option>
+                </select>
+
+                <br><br>
+
+                <input type="button" value="Submit Changes" onclick="choicesContent()">
+
+                <div id="choices-body"></div> 
+            </div>
+            <div id="todo" data-tab-content>
+                <h1>ToDo</h1>
+
+                <div id="todo-body"></div> 
+           </div>
+           <div id="profile" data-tab-content>
+                <h1>Profile</h1>
+
+                <div id="profile-body"></div> 
+            </div>
+            <div id="colors" data-tab-content>
+                <h1>Colors</h1>
+
+                <div id="colors-body"></div> 
+            </div>
+            <div id="lr" data-tab-content>
+                <h1>LR</h1>
+
+                <div id="lr-body"></div> 
+            </div>
+
+        </div>
+
+            <ul class = "tabs">
+                <li data-tab-target="#text" class="tab">Text</li>
+                <li data-tab-target="#choices" class="tab">Choices</li>
+                <li data-tab-target="#todo" class="tab">ToDo</li>
+                <li data-tab-target="#profile" class="tab">Profile</li>
+                <li data-tab-target="#colors" class="tab">Colors</li>
+                <li data-tab-target="#lr" class="tab">LR</li>
+            </ul>
+    </div>
+
+</body>
+
+</html>
