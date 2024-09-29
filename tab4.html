@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Tab</title>
+    <link rel="stylesheet" href="tab4.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="profile-section">
+            <h1>Welcome to the Profile Page</h1>
+            
+            <div class="profile-card-container">
+                
+                <div class="profile-card" id="johnProfile">
+                    <img src="images/Img1.jpeg" alt="John's Profile Picture" class="profile-img">
+                    <div class="profile-name" id="johnName">John Miller</div>
+                </div>
+                
+                <div class="profile-card" id="jessicaProfile">
+                    <img src="images/img2.jpeg" alt="Jessica's Profile Picture" class="profile-img">
+                    <div class="profile-name" id="jessicaName">Jessica Smith</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="notificationMessage" class="alert hidden">
+            <span id="notificationText"><strong>Notification:</strong> This is John's profile.</span>
+            <button id="closeButton" class="close-btn">&times;</button>
+        </div>
+
+        
+        <div class="nav-bar">
+            <button class="nav-item">Text</button>
+            <button class="nav-item">Choices</button>
+            <button class="nav-item">ToDo</button>
+            <button class="nav-item active">Profile</button>
+            <button class="nav-item">Colors</button>
+            <button class="nav-item">LR</button>
+        </div>
+    </div>
+
+    
+    <script>
+        
+        function showProfileMessage(profileName) {
+            var notificationMessage = document.getElementById('notificationMessage');
+            var notificationText = document.getElementById('notificationText');
+
+            
+            notificationText.innerHTML = "<strong>Notification:</strong> This is " + profileName + "'s profile.";
+            
+            
+            notificationMessage.classList.remove('hidden');
+            notificationMessage.classList.add('visible');
+        }
+
+        
+        document.getElementById('johnProfile').addEventListener('click', function() {
+            showProfileMessage("John");
+        });
+
+        document.getElementById('johnName').addEventListener('click', function() {
+            showProfileMessage("John");
+        });
+
+        document.getElementById('jessicaProfile').addEventListener('click', function() {
+            showProfileMessage("Jessica");
+        });
+
+        document.getElementById('jessicaName').addEventListener('click', function() {
+            showProfileMessage("Jessica");
+        });
+
+        
+        document.getElementById('closeButton').addEventListener('click', function() {
+            var notificationMessage = document.getElementById('notificationMessage');
+            notificationMessage.classList.remove('visible');
+            notificationMessage.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
