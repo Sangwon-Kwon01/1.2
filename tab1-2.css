@@ -26,6 +26,12 @@ body {
 .tab {
     cursor: pointer;
     padding: 10px;
+    color: black;
+    text-decoration: underline;
+    
+}
+a:link {
+    color: black;
 }
 
 .container {
