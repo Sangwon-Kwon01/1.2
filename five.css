@@ -58,7 +58,6 @@ h1 {
 }
 
 .tabs {
-    width: 640px; 
     display: flex;
     justify-content: space-around;
     margin: 0;
@@ -69,7 +68,7 @@ h1 {
     bottom: 0;
     list-style-type: none;
     left: 50%; 
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
 
 .tab {
@@ -77,6 +76,7 @@ h1 {
     color: black;
     cursor: pointer;
     background-color: blue;
+    color: black;
 }
 
 .tab:last-child {
@@ -85,4 +85,8 @@ h1 {
 
 .tab.active {
     background-color: darkgrey;
+}
+
+a:link {
+    color: black;
 }
