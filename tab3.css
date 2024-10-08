@@ -44,12 +44,10 @@ ul {
 
 li {
     padding: 15px;
-    background: #d8d8d8;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
 }
 
 li.completed {
@@ -80,16 +78,12 @@ li.completed {
 }
 
 .tab {
+    cursor: pointer;
     padding: 10px;
     color: black;
-    cursor: pointer;
-    background-color: blue;
+    text-decoration: underline;
+    
 }
-
-.tab:last-child {
-    border-right: none;
-}
-
-.tab.active {
-    background-color: darkgrey;
+a:link {
+    color: black
 }
